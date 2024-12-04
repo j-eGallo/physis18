@@ -148,22 +148,39 @@ header .header-right .hamburger div {
     text-align: center;
 }
 
-.titleL {
-    font-style: italic !important; 
-    font-family: 'Autography', sans-serif !important; 
-    font-size: 51px !important; 
-    text-align: left !important; 
-    margin-left: 185px !important;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement les éléments */
+    position: relative;
 }
 
-.titleR {
-    font-style: italic !important;  
-    font-family: 'Autography', sans-serif !important; 
-    font-size: 51px !important; 
-    text-align: right !important; 
-    margin-top: 0 !important; 
-    margin-right: 182px !important;
+#ncover {
+    display: block;
+    max-width: 100%; /* Image s'adapte à la largeur disponible */
+    height: auto; /* Conserve les proportions */
 }
+
+.text-wrapper {
+    display: flex;
+    justify-content: space-between; /* Sépare les deux phrases sous l'image */
+    width: 100%; /* Adapte la largeur des phrases à celle de l'image */
+    max-width: 800px; /* Fixe une largeur max (ou remplace par un `calc` si besoin) */
+    margin-top: 10px;
+    padding: 0 10px; /* Ajoute une marge intérieure pour éviter les bords */
+    box-sizing: border-box; /* Inclut le padding dans la largeur */
+}
+
+.titleL, .titleR {
+    font-style: italic;
+    font-family: 'Autography', sans-serif;
+    font-size: 1.2rem; /* Adapte la taille à l'échelle de l'image */
+    white-space: nowrap; /* Empêche un retour à la ligne intempestif */
+    overflow: hidden; /* Cache le contenu débordant */
+    text-overflow: ellipsis; /* Ajoute "..." si nécessaire */
+}
+
+
 
 .titleM {
     display: none !important;
@@ -297,10 +314,7 @@ header .header-right .hamburger div {
     pointer-events: none;
 }
 
-#ncover {
-    height: 655px;
-    width: auto;
-}
+
 
 .sepbar {
     width: 43%;
