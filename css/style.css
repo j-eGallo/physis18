@@ -167,7 +167,7 @@ header .header-right .hamburger div {
 
 #ncover {
     height: auto;
-    width: 80%;
+    width: 70%;
   }
 
   .titleL {
@@ -175,7 +175,7 @@ header .header-right .hamburger div {
     font-family: 'Autography', sans-serif !important;
     font-size: 45px !important;
     text-align: left !important;
-    margin-left: 10%;
+    margin-left: 16%;
   }
 
 
@@ -185,7 +185,7 @@ header .header-right .hamburger div {
     font-size: 45px !important;
     text-align: right !important;
     margin-top: 0 !important;
-    margin-right: 10%;
+    margin-right: 16%;
   }
 
 
